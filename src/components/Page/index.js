@@ -7,7 +7,7 @@ import Resume from '../Resume';
 
 function Page({ currentPage}) {
     const renderPage = () =>{
-        //conditional that returns the correct component based on our current name
+        //conditional that returns the correct component based on our currentPage.name
 
         //switch case, if statement
 
