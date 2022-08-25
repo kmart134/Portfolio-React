@@ -7,15 +7,16 @@ function Contact() {
     });
 
     const handleSubmit = (e) => {
-
+       //use validateEmail
     };
 
     const handleChange = (e) => {
-        //use validateEmail
+       
     };
 
     return {
         //set up form
+        //examples in mondays activites
     };
 }
 
