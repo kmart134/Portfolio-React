@@ -29,7 +29,7 @@ return(
 
     //footer component
     //close conatiner
-) 
+)
 }
 
 export default App;
