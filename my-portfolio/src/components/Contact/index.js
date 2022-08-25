@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
-import {validateEmail } from '../../utils/helpers';
+// import React, { useState } from 'react';
+// import {validateEmail } from '../../utils/helpers';
 
-function Contact() {
-    const [formState, setFormState] =useState({
+// function Contact() {
+//     const [formState, setFormState] =useState({
 
-    });
+//     });
 
-    const handleSubmit = (e) => {
+//     const handleSubmit = (e) => {
        //use validateEmail
-    };
+    // };
 
-    const handleChange = (e) => {
+    // const handleChange = (e) => {
        
-    };
+    // };
 
-    return {
+    // return {
         //set up form
         //examples in mondays activites
-    };
-}
+//     };
+// }
 
-export default Contact
+// export default Contact;
