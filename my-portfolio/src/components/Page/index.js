@@ -3,6 +3,7 @@ import React , { useState } from 'react';
 import About from '../About';
 import Portfolio from '../Portfolio';
 import Contact from '../Contact';
+import Footer from '../Footer';
 // import Resume from '../Resume';
 import Nav from "../Nav";
 // import { capitalizeFirstLetter} from '../../utils/helper';
@@ -40,7 +41,7 @@ export default function Page()  {
         // </section>
         <div>
         {/* We are passing the currentPage from state and the function to update it */}
-        <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+        <Nav currentPage={currentPage} handlePageChange={handlePageChange} Footer/>
         {/* Here we are calling the renderPage method which will return a component  */}
         {renderPage()}
       </div>
