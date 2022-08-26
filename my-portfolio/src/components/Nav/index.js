@@ -1,4 +1,13 @@
 import React, { useEffect } from 'react';
+import '../../assets/Navbar.css';
+
+
+const styles = {
+  navbarStyle: {
+    background: 'pink',
+    // justifyContent: 'flex-end',
+  },
+};
 
 function Nav({currentPage, handlePageChange}) {
     // const {
@@ -9,6 +18,9 @@ function Nav({currentPage, handlePageChange}) {
 
     return(
         //nav
+        <nav style={styles.navbarStyle} className="navbar">
+      <a href="/">Welcome</a>
+    
         <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
@@ -52,18 +64,7 @@ function Nav({currentPage, handlePageChange}) {
         </a>
       </li>
     </ul>
-        //map over pages to render the name of each page - activity 10 solved
-        //have an onClick for each of these elements created by the map, that sets the 
-        //current page equal to that page - using setCurrentPage that we get from App.js
-    //     <ul className="list-group">
-    //   {/* Here we map over each grocery item and return a new array of `li` elements that contains the grocery name */}
-    //   {/* When using map you must provide a unique key attribute to each item. Ours is `item.id` */}
-    //   {props.groceries.map(item => (
-    //     <li className="list-group-item" key={item.id}>
-    //       {item.name}
-    //     </li>
-    //   ))}
-    // </ul>
+    </nav>
     );
 }
 

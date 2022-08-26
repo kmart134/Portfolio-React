@@ -1,9 +1,10 @@
 import React from 'react';
+import '../../assets/Section.css';
 
 function About(){
     return(
         <div>
-        <section className="about-me">
+        <section className="section">
             <img id= "headshot" src="./assets/images/karen.jpg" alt="Karen Headshot"/>
             <h2>About Me</h2>
             <p className="body-text">
