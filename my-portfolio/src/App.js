@@ -3,6 +3,11 @@ import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Page from "./components/Page";
 import Footer from "./components/Footer";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
+import Portfolio from "./components/Portfolio";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App () {
     const [pages] = useState([
@@ -18,31 +23,18 @@ function App () {
 
 //set up return
 return(
-    <div>
-        <Header>
-        <Nav
-          pages={pages}
-          setCurrentPage={setCurrentPage}
-          currentPage={currentPage}
-        ></Nav>
-        </Header>
-        <main>
-            <Page currentPage={currentPage}></Page>
-        </main>
-         <Footer/> 
-    </div>
-    //container
-    //header componenet wrapping your nav componenet
-    //nav- give the nav component some props - pages = {pages},
-    //set CurrentPage = {setCurrentPage}, currentPage ={currentPage}
-    //close the header
-
-    //main tag wrapping your page componenet
-    //page component with the prop of currentpage ={currentPage}
-    //close main
-
-    //footer component
-    //close conatiner
+    <div >
+    <Router>
+    <Header />
+    <Routes>
+    <Route path='/Portfolio-React/about' element={<About/>} />
+    <Route path='/Portfolio-React/contact' element={<Contact/>} />
+    <Route path='/Portfolio-React/resume' element={<Resume/>} />
+    <Route path='/Portfolio-React/portfolio' element={<Portfolio/>} />
+    </Routes>
+    <Footer />
+    </Router>
+</div>
 );
 }
 

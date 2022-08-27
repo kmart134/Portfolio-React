@@ -1,89 +1,62 @@
 import React, { useEffect } from 'react';
 import '../../assets/Navbar.css';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import { Link } from 'react-router-dom';
 
 
 const styles = {
   navbarStyle: {
     background: 'pink',
-    // justifyContent: 'flex-end',
+    justifyContent: 'flex-end',
   },
 };
 
-function Nav({props}) {
-    const {
-        pages = [],
-        setCurrentPage,
-        currentPage,
-    } = props;
-
-    useEffect(() => {
-      document.title = capitalizeFirstLetter(currentPage.name);
-    }, [currentPage]);
+function Nav({currentPage, handlePageChange}) {
+    // const {
+    //     pages = [],
+    //     setCurrentPage,
+    //     currentPage,
+    // } = props;
 
     return(
-        <nav>
-          <ul className="flex-row">
-            {pages.map((Page) => (
-              <li
-                className={`mx-5 ${
-                  currentPage.name === Page.name && 'navActive'
-                  }`}
-                key={Page.name}
-              >
-                <span
-                  onClick={() => setCurrentPage(Page)}
-                >
-                  {capitalizeFirstLetter(Page.name)}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        //nav
+        <nav style={styles.navbarStyle} className="navbar">
+      <a href="/">Welcome</a>
+    
+        <ul className="nav nav-tabs">
+        <li className='nav-item'>
+        <Link to='/Portfolio-React/about'
+        onClick={() => handlePageChange('About')}
+        className={currentPage === 'About' ? 'nav-active nav-link' : 'nav-link'}>
+        About
+        </Link>
+        </li>
+
+        <li className='nav-item'>
+        <Link to='/Portfolio-React/contact'
+        onClick={() => handlePageChange('Contact')}
+        className={currentPage === 'Contact' ? 'nav-active nav-link' : 'nav-link'}>
+        Contact
+        </Link>
+        </li>
+
+        <li className='nav-item'>
+        <Link to='/Portfolio-React/resume'
+        onClick={() => handlePageChange('Resume')}
+        className={currentPage === 'Resume' ? 'nav-active nav-link' : 'nav-link'}>
+        Resume
+        </Link>
+        </li>
+
+        <li className='nav-item'>
+        <Link to='/Portfolio-React/portfolio'
+        onClick={() => handlePageChange('Portfolio')}
+        className={currentPage === 'Portfolio' ? 'nav-active nav-link' : 'nav-link'}>
+        Portfolio
+        </Link>
+        </li>
+    </ul>
+    </nav>
     );
-  }
-
-
-
-
-      // <li className="nav-item">
-      // <a
-
-      //     href="about-me"
-      //     onClick={() => handlePageChange('About')}
-      //     className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-      //   >
-      //     About Me
-      //   </a>
-      // </li>
-      // <li className="nav-item">
-      //   <a
-      //     href="portfolio"
-      //     onClick={() => handlePageChange('Portfolio')}
-      //     className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-      //   >
-      //     Portfolio
-      //   </a>
-      // </li>
-      // <li className="nav-item">
-      //   <a
-      //     href="contact"
-      //     onClick={() => handlePageChange('Contact')}
-      //     className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-      //   >
-      //     Contact
-      //   </a>
-      // </li>
-      // <li className="nav-item">
-      //   <a
-      //     href="resume"
-      //     onClick={() => handlePageChange('Resume')}
-      //     className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-      //   >
-      //     Resume
-      //   </a>
-      // </li>
- 
-
+}
 
 export default Nav;

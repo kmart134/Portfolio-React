@@ -16,6 +16,7 @@ function Portfolio() {
     ]);
  return(
     <div>
+        Portfolio here
     <div className= "flex-row">
         {projects.map((project, idx) =>(
             <Project 
