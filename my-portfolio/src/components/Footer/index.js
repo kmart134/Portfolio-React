@@ -3,7 +3,7 @@ import '../../assets/Footer.css';
 
 function Footer(){
     return(
-        <footer class="footer">
+        <footer className="footer">
         <h2>Made with ❤️️ </h2>
     </footer>
     );
