@@ -12,7 +12,7 @@ function Portfolio() {
         },
         {
             name: 'Mix-up-Movie-Night',
-            description: 'This nift application will quickly switch up boring datenights. The application will suggest a cocktail and movie at random to get you aout of your boring movie night rut. This was a collaboration with other students in the UCF Full-Stack coding Bootcamp. ',
+            description: 'This nifty application will quickly switch up boring date nights. The application will suggest a cocktail and movie at random to get you out of your boring movie night rut. This was a collaboration with other students in the UCF Full-Stack coding Bootcamp. ',
             link: "https://servbt.github.io/Mix-up-Movie-Night/",
             repo: "https://github.com/Servbt/Mix-up-Movie-Night"
         },
