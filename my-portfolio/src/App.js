@@ -25,6 +25,7 @@ function App () {
 return(
     <div >
     <Router>
+    <Nav/>
     <Header />
     <Routes>
     <Route path='/Portfolio-React/about' element={<About/>} />
