@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
-import Page from "./components/Page";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -11,8 +10,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App () {
     const [pages] = useState([
-        {name: 'about me'},
-        {name: 'portfolio'}
+        // {name: 'about me'},
+        // {name: 'portfolio'}
         // {name: 'contact'},
         // {name: 'resume'}
     ]);
@@ -21,7 +20,6 @@ function App () {
     const [currentPage, setCurrentPage] = useState(pages[0]);
 //example pages[0] - would show the about me page first
 
-//set up return
 return(
     <div >
     <Router>
