@@ -1,4 +1,5 @@
 import React from 'react';
+import coverImage from '../../assets/images/laptop.jpg';
 
 function Resume(){
     return(

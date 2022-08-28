@@ -1,10 +1,12 @@
 import React from 'react';
 import '../../assets/About.css';
 import '../../assets/images/karen.jpg'
+import coverImage from '../../assets/images/laptop.jpg';
 
 function About(){
     return(
         <div className="content">
+             <img id= "laptop" src={coverImage} alt="laptop on desk"></img>
         <section className="about-me">
             <img id= "headshot" src={require("../../assets/images/karen.jpg")} alt="Karen Headshot"/>
             <h2>About Me</h2>
