@@ -1,6 +1,7 @@
 // instructor provided
 import React from 'react';
 import { removeHyphensAndCapitalize } from '../../utils/helpers';
+import '../../assets/Project.css';
 
 function Project({ project }) {
     const { name, repo, link, description} = project;
