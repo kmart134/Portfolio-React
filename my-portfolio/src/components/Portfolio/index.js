@@ -5,7 +5,7 @@ import Project from "../Project";
 function Portfolio() {
     const [projects] = useState([
         {
-            name: 'Backyard-Jungle',
+            name: 'Backyard Jungle',
             description: 'This growing website allows plant-lovers to add plants to their gardens (collections) and interact with other others based on their interests. This was a collaboration with other students in the UCF Full-Stack coding Bootcamp.',
             link: "https://dry-beach-49040.herokuapp.com/",
             repo: "https://github.com/Anastasia095/Backyard-Jungle"
