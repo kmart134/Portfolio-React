@@ -8,7 +8,7 @@ function Project({ project }) {
     return(
         <div className="project" key={name}>
             <img
-            src={(`../../assets/images/${name}.png`).default}
+            src={require(`../../assets/images/${name}.png`)}
             alt={removeHyphensAndCapitalize(name)}
             className="project-bg"
             />
