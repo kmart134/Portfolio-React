@@ -1,5 +1,6 @@
 //instructo provided
 import React, { useState } from 'react';
+import '../../assets/Portfolio.css';
 import Project from "../Project";
 
 function Portfolio() {
@@ -25,8 +26,8 @@ function Portfolio() {
     ]);
  return(
     <div>
-        Portfolio here
-    <div className= "flex-row">
+        
+    <div className= "port flex-row">
         {projects.map((project, idx) =>(
             <Project 
             project={project}
