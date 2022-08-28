@@ -3,12 +3,12 @@ import '../../assets/Navbar.css';
 import { Link } from 'react-router-dom';
 
 
-const styles = {
-  navbarStyle: {
-    background: 'pink',
-    justifyContent: 'flex-end',
-  },
-};
+// const styles = {
+//   navbarStyle: {
+//     background: 'pink',
+//     justifyContent: 'flex-end',
+//   },
+// };
 
 function Nav({currentPage, handlePageChange}) {
     // const {
@@ -19,8 +19,8 @@ function Nav({currentPage, handlePageChange}) {
 
     return(
         //nav
-        <nav style={styles.navbarStyle} className="navbar">
-      <a href="/">Welcome</a>
+        <nav className="navbar">
+        <h1 className="navheading">Karen Martinez Guerrero</h1>
     
         <ul className="nav nav-tabs">
         <li className='nav-item'>

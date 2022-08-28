@@ -1,24 +1,42 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
 .navbar {
     height: 60px;
-    /* padding-top: 15px; */
+    background-color: #ce6bb0;
+    /* padding: 20px; */
     /* margin-right: 20px; */
-    /* float: right; */
-    font-family: 'Trebuchet MS', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     /* font-size: 20px; */
     
   }
   
   .navbar a {
-    color: white;
+    vertical-align: top;
+    color:rgb(196, 24, 24);
+    font-family: 'Trebuchet MS', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 1.3rem;
-    text-decoration: underline;
-    margin: 5px;
+    /* text-decoration: underline; */
+    /* margin: 5px; */
     /* line-height: 3; */
   }
 
-  nav ul li {
-    display: inline-block;
-    margin-left: 25px;
 
+  nav ul li {
+    float: right; 
+    display: inline-block;
+    margin-left: 25px; 
   }
+  
+
+  .navheading{
+    /* display: inline-block; */
+    font-size: 48px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff; 
+  }
+
   
