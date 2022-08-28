@@ -24,7 +24,7 @@ function Nav({currentPage, handlePageChange}) {
     
         <ul className="nav nav-tabs">
         <li className='nav-item'>
-        <Link to='/Portfolio-React/about'
+        <Link to=''
         onClick={() => handlePageChange('About')}
         className={currentPage === 'About' ? 'nav-active nav-link' : 'nav-link'}>
         About
