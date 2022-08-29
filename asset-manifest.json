@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/my-app/static/css/main.82672c13.css",
+    "main.js": "/my-app/static/js/main.11a6c789.js",
+    "static/media/Backyard Jungle.png": "/my-app/static/media/Backyard Jungle.19518cf19b598f9e1d92.png",
+    "static/media/Mix-up-Movie-Night.png": "/my-app/static/media/Mix-up-Movie-Night.60c5df568a684c2ef567.png",
+    "static/media/karen.jpg": "/my-app/static/media/karen.1760539df573b979d692.jpg",
+    "static/media/laptop.jpg": "/my-app/static/media/laptop.4e01eeb46007537e0157.jpg",
+    "static/media/Resume.png": "/my-app/static/media/Resume.3071e83ee9c70b584a4f.png",
+    "static/media/Code-Quiz.png": "/my-app/static/media/Code-Quiz.9feaed0c34f792eb16ed.png",
+    "index.html": "/my-app/index.html",
+    "main.82672c13.css.map": "/my-app/static/css/main.82672c13.css.map",
+    "main.11a6c789.js.map": "/my-app/static/js/main.11a6c789.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82672c13.css",
+    "static/js/main.11a6c789.js"
+  ]
+}
