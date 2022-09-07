@@ -26,7 +26,7 @@ return(
     <Nav/>
     <Header />
     <Routes>
-    <Route path='/' element={<About/>} />
+    <Route path='/Portfolio-React' element={<About/>} />
     <Route path='/Portfolio-React/contact' element={<Contact/>} />
     <Route path='/Portfolio-React/resume' element={<Resume/>} />
     <Route path='/Portfolio-React/portfolio' element={<Portfolio/>} />
